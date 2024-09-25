@@ -40,6 +40,8 @@ Nos diferenciamos con un sistema de recompensas a los usuarios que mas publicaci
 
 ### Requisitos Funcionales 
 
+#### Usuarios
+
 - Crear Usuario:
     -  Los usuarios pueden registrarse en la plataforma proporcionando
        información básica como nombre de usuario, dirección de correo electrónico y
@@ -83,4 +85,30 @@ Nos diferenciamos con un sistema de recompensas a los usuarios que mas publicaci
       permitirá realizar un mayor número de publicaciones de ofertas u obtener acceso
       a características adicionales de la plataforma.
 
-      
+- Crear Reseñas de Productos: 
+    - El usuario premium puede realizar reseñas de los productos que puede creer que
+      tenga relevancia o que sean interesantes.
+
+- Guardar Publicaciones Favoritas:
+    - Los usuarios pueden guardar las publicaciones que les interesen para acceder
+      fácilmente a ellas más tarde desde su perfil o lista de favoritos.
+
+#### Empresa
+
+- Contactar con usuarios Premium: 
+    - El rol empresa puede contactar con usuarios premium para ofrecerles patrocinio o
+      colaboración, mediante reseñas de un producto en concreto o publicación de
+      ofertas.
+
+#### Administrador 
+
+- Eliminar Usuarios:
+    - El administrador tiene la opción de eliminar o bloquear temporalmente a los
+      usuarios que considere que hace un uso indebido de la plataforma.
+
+- Eliminar Publicaciones: 
+    - El administrador tiene la opción de eliminar publicaciones de los usuarios.
+
+- Realizar Funciones de Usuario:
+    - Implementar recompensas o reconocimiento para los usuarios que reciben altas
+      calificaciones y valoraciones positivas de la comunidad.
