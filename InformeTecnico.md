@@ -2,6 +2,26 @@
 
 ## Análisis de los modelos de ejecución cliente/servidor
 
+### Qué es la arquitectura cliente-servidor
+
+El modelo cliente-servidor es una arquitectura ampliamente utilizada en el desarrollo de software, donde existen dos componentes principales, donde el cliente es el que pide solicitudes y el servidor se dedica a resolver las solicitudes del cliente,las procesa y se las devuelve con las respuestas correspondientes. 
+Esta separación de responsabilidades permite que cada parte se enfoque en tareas específicas.
+
+El modelo **cliente-servidor tradicional**, basado en solicitudes y respuestas, es el enfoque más común.
+En este modelo el cliente realiza una petición HTTP, el servidor procesa y devuelve al cliente una respuesta.
+Es un modelo síncrono donde el cliente espera la respuesta del servidor para poder continuar.
+Un ejemplo típico es un navegador web que solicita un HTML a un servidor.
+Un modelo sencillo de implementar y ampliamente utilizado, aunque presenta limitaciones de escalabilidad, ya que el servidor puede saturarse ante muchas peticiones.
+
+
+**Arquitectura multicapa (n-Tier)**, donde el sistema se divide en varias capas, la de presentación (cliente), la de lógica de negocio ( servidor ) y la de datos ( base de datos ). A veces se añade una capa intermedia como un Middleware para mejorar la la separación de responsabilidades y la escalabilidad.
+Este modelo es común en aplicaciones empresariales, donde cada capa realiza una función específica.
+Aunque es mas compleja que el modelo **tradicional**, permite mayor escalabilidad y modularidad, ya que cada capa funciona de manera independiente.
+
+
+
+
+
 
 
 
