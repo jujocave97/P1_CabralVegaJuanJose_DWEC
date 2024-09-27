@@ -1,4 +1,4 @@
-## Nombre del proyecto ( chollometro )
+# DEAL CHASER
 
 ### Descripcion del proyecto
 
@@ -112,3 +112,10 @@ Nos diferenciamos con un sistema de recompensas a los usuarios que mas publicaci
 - Realizar Funciones de Usuario:
     - Implementar recompensas o reconocimiento para los usuarios que reciben altas
       calificaciones y valoraciones positivas de la comunidad.
+
+
+### Tecnologías
+
+En el lado cliente de la aplicación se usará HTML5 , CSS3 y JAVASCRIPT.
+En el lado servidor se construirá con JavaScript usando su conocido entorno de ejecución Node.js y el framework Express.js .
+
