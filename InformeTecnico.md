@@ -33,12 +33,36 @@ En sistemas como la compartición de archivos, el modelo **Peer-to-Peer (P2P)** 
 Para este proyecto se va a usar el **modelo de ejecucíon tradicional** ya que tiene una combinación de simplicidad, bajo costo y fácil mantenimiento. Ideal para un tráfico moderado y cuando se quiere lanzar un producto rápido sin complicaciones innecesarias.
 
 
+## Lenguajes de programación web
+
+En el lado cliente los lenguajes de programación mas comunes son **JavaScript** y **TypeScript**. HTML y CSS no son lenguajes de programación! ya que no tienen funciones lógicas.
+
+### JavaScript
+
+**JavaScript** es un pilar fundamental a la hora de desarrollar en el lado cliente. Este lenguaje de programación permite agregar interactividad y dinamismo a las páginas web, como animaciones de elementos, actualización del contenido sin recargar la página o validar formularios. 
+Es un lenguaje de programación o de secuencias de comandos que te permite implementar funciones complejas en páginas web. 
+**JavaScript** es un lenguage interpretado ligero. El navegador web recibe el código **JavaScript** en su forma de texto original y ejecuta el script a partir de ahí. Desde un punto de vista técnico, la mayoría de los intérpretes de **JavaScript** modernos utilizan una técnica llamada compilación en tiempo real para mejorar el rendimiento, el código se compila en formato binario mas rápido mientras se está ejecutando el script. Sin embargo, **JavaScript** aún se considera un lenguaje interpretado, ya que la compilación se maneja en el entorno de ejecución, en lugar de antes.
 
 
 
+### TypeScript
+
+En 2012 fue el año en el que apareció **TypeScript**, una solución de Microsoft para el desarrollo de aplicaciones con **JavaScript** a gran escala, para ellos y para sus clientes. 
+Está pensado para el desarrollo de aplicaciones robustas, implementando características en el lenguaje que nos permitan desarrollar herramientas más avanzadas para el desarrollo de aplicaciones.
+
+**TypeScript** es un *superconjunto* de **JavaScript** que introduce tipado estático y características avanzadas orientadas a objetos. Se escribe en **TypeScript** y se transpila a JavaScript para que los navegadores lo interpreten, ya que **JavaScript** sigue siendo el único lenguaje nativo del navegador.
+Se puede integrar **TypeScript** en proyectos existentes de **JavaScript** sin tener que reimplementar todo el código del proyecto en **TypeScript**.
+Por si fuera poco, uno de los beneficios adicionales de esta característica del lenguaje, es que pone a disposición el enorme ecosistema de librerías y frameworks que existen para **JavaScript**. Con **Typescript** podemos desarrollas aplicaciones con React, Vue, Angular, etc.
 
 
+### Conclusión
 
+**JavaScript** es el lenguaje nativo del navegador, conocido por su simplicidad, flexibilidad y rapidez en el desarrollo, especialmente en proyectos pequeños o prototipos rápidos. Sin embargo, su naturaleza dinámica sin tipado estático puede llevar a errores difíciles de detectar y problemas de mantenibilidad en proyectos grandes. A pesar de su compatibilidad y su enorme ecosistema, **JavaScript** puede ser menos confiable en aplicaciones de gran escala debido a la falta de verificación de tipos en tiempo de compilación.
+
+**TypeScript**, por otro lado, es un *superconjunto* de **JavaScript** que introduce tipado estático, lo que mejora la seguridad del código y ayuda a evitar errores en tiempo de ejecución. Es ideal para proyectos grandes, ya que facilita la mantenibilidad y permite el uso de características avanzadas como el autocompletado y el soporte para las últimas versiones de ECMAScript. Aunque su configuración y curva de aprendizaje son más complejas, **TypeScript** proporciona una mayor robustez y escalabilidad a largo plazo, a coste de un proceso de desarrollo más lento.
+
+
+Este proyecto se va a desarrollar con **JavaScript**, ya que es conocido por el desarrollador y las ventajas que ofrece respecto a **TypeScript** son mayores para este proyecto.
 
 
 ### Cliente
@@ -111,3 +135,5 @@ materialize : https://openwebinars.net/blog/materialize-que-es-ventajas-y-primer
 React: https://es.react.dev
 Angular: 
 servidor tiempo real : https://www.tooltyp.com/arquitectura-de-un-servicio-de-mensajeria-instantanea-como-whatsapp/
+typescript : https://codigofacilito.com/articulos/typescript
+javascript : https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript
