@@ -24,7 +24,7 @@ Aunque es mas compleja que el modelo **tradicional**, permite mayor escalabilida
 En aplicaciones que requieren una comunicación en tiempo real, como los sistemas de chat o los juegos en línea, se utiliza el modelo **cliente-servidor en tiempo real**.
 A diferencia del **modelo tradicional**, aquí el servidor envía actualizaciones constantes al cliente sin que este tenga que hacer solicitudes explícitas. Esto se logra mediante tecnologías como **WebSockets**, que permiten una conexión bidireccional y continua. Este modelo es ideal para aplicaciones donde la inmediatez es crucial, aunque requiere una gestión mas compleja de las conexiones permanentes y puede aumentar el uso de recursos en el servidor.
 
-![websocket](./images/websocket.png.png)
+![websocket](./images/websocket.png)
 
 En sistemas como la compartición de archivos, el modelo **Peer-to-Peer (P2P)** permite que cada nodo funcione como cliente y servidor a la vez. Aquí, los recursos se distribuyen entre todos los nodos, eliminando la dependencia de un servidor central y mejorando la escalabilidad y la tolerancia a fallos. Un ejemplo clásico es **BitTorrent**, donde cada usuario actúa como servidor para otros usuarios, compartiendo partes del archivo que ya haya descargado. Aunque es un enfoque muy eficiente para distribuir recursos, plantea desafíos en cuanto a la integridad y seguridad de los datos.
 
@@ -65,6 +65,9 @@ Por si fuera poco, uno de los beneficios adicionales de esta característica del
 Este proyecto se va a desarrollar con **JavaScript**, ya que es conocido por el desarrollador y las ventajas que ofrece respecto a **TypeScript** son mayores para este proyecto.
 
 
+## Tecnologías que se van a utilizar
+
+
 ### Cliente
 
 En el lado cliente se usará HTML5, CSS3 y JAVASCRIPT.
@@ -83,24 +86,7 @@ Y se utiliza JavaScript y HMTL para mostrar o utilizar estos datos.
 AJAX : https://www.w3schools.com/whatis/whatis_ajax.asp
 
 
-### Servidor
-
-En el lado servidor se utilizará Node.js y el framework Express.js
-
-- Node.js: Es un entorno de ejecución para JavaScript que permite usarlo en el servidor. La ventaja de usar Node.js es que se ejecuta con un hilo (monohilo) con entradas y salidas asíncronas. Un proceso con un bucle que gestiona de forma asíncrona, todos los eventos.
-
-![funcionamiento de node.js](./images/node.png)
-
-- Express.js: Framework que sirve para crear APIs y rutas. Es simple y minimalista, significa que es fácil de usar, tiene una configuración muy simple y proporciona todas las herramientas necesarias para crear un backend.
-Te da libertad para elegir los patrones y herramientas, cómo manejar rutas, controladores y la lógica de la aplicación.
-Al estar construido en Node.js, aprovecha su arquitectura basada en eventos y asincronía, lo que permite manejar grander volúmenes de manera eficiente sin bloquear el servidor.
-
-### Por qué he elegido estos modelos y no otros.
-
-
-En el lado cliente se han elegido este modelo de ejecución porque son los principales para hacer una página web y estoy muy familiarizado con HTML5, CSS3 y JavaScript. 
-
-### Uso de Frameworks en el lado cliente.
+#### Uso de Frameworks en el lado cliente.
 
 Existen frameworks para casi todo tipo de lenguajes o tecnologías, se van a repasar los diferentes frameworks existentes y la decisión de por qué no se van a usar frameworks en el lado Front End.
 
@@ -124,16 +110,59 @@ Existen frameworks para casi todo tipo de lenguajes o tecnologías, se van a rep
 
     React usa una sintaxis de marcado JSX, hace que la lógica de renderizado sea mas fáciles de crear, mantener y eliminar al ser una extensión de la sintaxis de JavaScript.
 
-    -Angular: Es un framework basado en componentes para crear aplicaciones web escalables, construida sobre TypeScript. 
+    - Angular: Es un framework basado en componentes para crear aplicaciones web escalables, construida sobre TypeScript. 
     Tiene una amplia variedad de características, que incluyen enrutamiento, administración de formularios, comunicación cliente-servidor y mucho más. Su principal objetivo es desarrollar aplicaciones de una sola página. Goo
 
 
 
-bootstap: https://rockcontent.com/es/blog/bootstrap/
-foundation: https://get.foundation
-materialize : https://openwebinars.net/blog/materialize-que-es-ventajas-y-primeros-pasos/
-React: https://es.react.dev
-Angular: 
-servidor tiempo real : https://www.tooltyp.com/arquitectura-de-un-servicio-de-mensajeria-instantanea-como-whatsapp/
-typescript : https://codigofacilito.com/articulos/typescript
-javascript : https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+### Servidor
+
+En el lado servidor se utilizará Node.js y el framework Express.js
+
+- Node.js: Es un entorno de ejecución para JavaScript que permite usarlo en el servidor. La ventaja de usar Node.js es que se ejecuta con un hilo (monohilo) con entradas y salidas asíncronas. Un proceso con un bucle que gestiona de forma asíncrona, todos los eventos.
+
+![funcionamiento de node.js](./images/node.png)
+
+
+#### Uso de frameworks en el lado servidor
+
+- Express.js: Framework que sirve para crear APIs y rutas. Es simple y minimalista, significa que es fácil de usar, tiene una configuración muy simple y proporciona todas las herramientas necesarias para crear un backend.
+Te da libertad para elegir los patrones y herramientas, cómo manejar rutas, controladores y la lógica de la aplicación.
+Al estar construido en Node.js, aprovecha su arquitectura basada en eventos y asincronía, lo que permite manejar grander volúmenes de manera eficiente sin bloquear el servidor.
+
+### Por qué he elegido estos modelos y no otros.
+
+En el lado del cliente, se ha elegido este modelo de ejecución debido a que HTML5, CSS3 y JavaScript son esenciales para construir una página web, y además, estoy muy familiarizado con estas tecnologías sin usar ningún tipo de framework ( se podrá implementar React o Angular si hicieran falta en el desarrollo ). En cuanto al backend, se ha optado por Node.js junto con el framework Express.js para crear el servidor, ya que en mis prácticas de DAM utilicé este método en una empresa, y descubrí que es una solución sencilla, diferente y efectiva para desarrollar un backend web.
+
+### Integración de lenguajes de marcas con lenguajes de programación de clientes web
+
+En una aplicación web, los lenguajes de marcas, como HTML, y los lenguajes de programación, como JavaScript, se integran de manera complementaria para crear una experiencia interactiva y funcional en el lado cliente. 
+
+HTML proporciona la estructura y el contenido básico de una página web a través de etiquetas y atributos que organizan elementos como encabezados, párrafos, imágenes, etc. HTML por sí solo es estático y no puede responder dinámicamente a las interacciones del usuario.
+
+Aquí es donde JavaScript entra en acción, permitiendo la interacción y manipulación del contenido de HTML de manera dinámica. JavaScript accede y modifica los elementos del DOM ( Document Object Model ), que es una representación interna de la estructura HTML en el navegador. 
+Con JavaScript puedes cambiar el contenido de una página sin recargarla, crear carruseles, galería de imágenes, manejar eventos como clicks, etc.
+
+### Herramientas de programación para clientes web.
+
+Existen una gran variedad de herramientas de programación para clientes web. Estas herramientas incluyen editores de código, bibliotecas y frameworks, herramientas de depuración y otras utilidades que facilitan el flujo de trabajo.
+
+Este proyecto se va a desarrollar con el entorno Visual Studio Code tanto como en el lado Cliente como en el lado Servidor. 
+Visual Studio Code es uno de los editores más populares y ampliamente utilizado por desarrolladores web. Ofrece soporte para extensiones, depuración y una gran integración con Git.
+Es realmente ligero y rápido en comparación a los demás IDEs, como IntelliJ. Consume pocos recursos y acepta múltiples lenguajes, ya que en este proyecto se va a trabajar con varios, como HTML ( lenguaje de marcas ), CSS y JavaScript. Ofrece una amplia colección de extensiones gratuitas, como linters, autocompletado para diversos lenguajes, Live Server , etc.
+
+
+
+
+
+
+### Bibliografía
+
+- bootstap: https://rockcontent.com/es/blog/bootstrap/
+- foundation: https://get.foundation
+- materialize : https://openwebinars.net/blog/materialize-que-es-ventajas-y-primeros-pasos/
+- React: https://es.react.dev
+- Angular: https://angular.dev/
+- servidor tiempo real : https://www.tooltyp.com/arquitectura-de-un-servicio-de-mensajeria-instantanea-como-whatsapp/
+- typescript : https://codigofacilito.com/articulos/typescript
+- javascript : https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript
