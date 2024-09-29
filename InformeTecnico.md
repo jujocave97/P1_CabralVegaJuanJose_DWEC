@@ -176,6 +176,21 @@ Y como estos muchos ejemplos más que se pueden ver en [compatibilidad de navega
 
 ## Análisis de Mercado
 
+### Competencia existente
+
+En el competitivo mercado de plataformas para compartir ofertas, el principal competidor es Chollómetro. Esta plataforma se ha consolidado como un referente, permitiendo a los usuarios compartir y descubrir ofertas de una amplia variedad de productos. En 2023, Chollómetro alcanzó más de 424 millones de visitas, lo que refleja su notable popularidad y la eficacia de su modelo de negocio centrado en la comunidad. Una de sus características distintivas es el enfoque en la interacción social, donde los usuarios pueden comentar y calificar las ofertas y a otros usuarios, fomentando así un entorno dinámico y colaborativo​.
+
+Otras aplicaciones como Atrápalo y Cupones.es también operan en este espacio, aunque no tienen la misma relevancia que Chollómetro. Atrápalo se enfoca principalmente en viajes y ocio, mientras que Cupones.es está más centrado en cupones de descuento. Esta especialización limita su alcance y diversidad en comparación con la propuesta de tu aplicación, que busca abarcar un espectro más amplio de productos y servicios​.
+
+### Diferenciación y nuevos valores
+
+Nuestra propuesta se diferencia en varios aspectos clave que aportan valor a la comunidad. En primer lugar, el enfoque en la comunidad permite una interacción más rica, donde los usuarios pueden calificar no solo las ofertas, sino también a otros miembros de la plataforma. Esto fomenta un ambiente de confianza y credibilidad, incentivando la participación activa.
+
+Además, la opción de cuentas Premium ofrece beneficios adicionales que pueden mejorar la experiencia del usuario. Estas cuentas permiten realizar más publicaciones y acceder a herramientas analíticas que ayudan a optimizar las ofertas, brindando un valor agregado que no se encuentra en plataformas competidoras​.
+
+Otro aspecto innovador es la capacidad de facilitar colaboraciones entre empresas y usuarios Premium. Esta funcionalidad no solo abre oportunidades de monetización para los usuarios, sino que también enriquece el contenido disponible en la plataforma. A diferencia de la competencia, que no ha implementado esta estrategia de manera efectiva, tu propuesta ofrece un ecosistema más integrado que beneficia tanto a consumidores como a marcas.
+
+Finalmente, al recompensar a los usuarios más calificados, se crea una cultura de participación activa que puede incrementar la retención y el uso regular de la aplicación. Esta estrategia de gamificación es esencial para mantener un alto nivel de engagement y motivar a los usuarios a interactuar continuamente.
 
 ### Bibliografía
 
@@ -188,3 +203,5 @@ Y como estos muchos ejemplos más que se pueden ver en [compatibilidad de navega
 - typescript : https://codigofacilito.com/articulos/typescript
 - javascript : https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript
 - compatibilidad navegadores : https://codelucky.com/javascript-browser-support/  https://developer.mozilla.org/es/docs/Mozilla/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs
+- análisis de mercado : https://elcandelerotecnologico.com/2024/02/19/chollometro-bate-records-mas-de-424-millones-de-visitas-a-la-plataforma-de-ofertas-en-2023/ 
+https://appmarketingnews.io/hablamos-con-el-equipo-de-chollometro-la-app-colaborativa-de-ofertas-y-descuentos/
