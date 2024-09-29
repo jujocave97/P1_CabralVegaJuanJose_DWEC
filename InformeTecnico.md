@@ -132,16 +132,16 @@ Al estar construido en Node.js, aprovecha su arquitectura basada en eventos y as
 
 ### Por qué he elegido estos modelos y no otros.
 
-En el lado del cliente, se ha elegido este modelo de ejecución debido a que HTML5, CSS3 y JavaScript son esenciales para construir una página web, y además, estoy muy familiarizado con estas tecnologías sin usar ningún tipo de framework ( se podrá implementar React o Angular si hicieran falta en el desarrollo ). En cuanto al backend, se ha optado por Node.js junto con el framework Express.js para crear el servidor, ya que en mis prácticas de DAM utilicé este método en una empresa, y descubrí que es una solución sencilla, diferente y efectiva para desarrollar un backend web.
+En el lado del cliente, se ha elegido este modelo de ejecución debido a que HTML5, CSS3 y **JavaScript** son esenciales para construir una página web, y además, estoy muy familiarizado con estas tecnologías sin usar ningún tipo de framework ( se podrá implementar React o Angular si hicieran falta en el desarrollo ). En cuanto al backend, se ha optado por Node.js junto con el framework Express.js para crear el servidor, ya que en mis prácticas de DAM utilicé este método en una empresa, y descubrí que es una solución sencilla, diferente y efectiva para desarrollar un backend web.
 
 ### Integración de lenguajes de marcas con lenguajes de programación de clientes web
 
-En una aplicación web, los lenguajes de marcas, como HTML, y los lenguajes de programación, como JavaScript, se integran de manera complementaria para crear una experiencia interactiva y funcional en el lado cliente. 
+En una aplicación web, los lenguajes de marcas, como HTML, y los lenguajes de programación, como **JavaScript**, se integran de manera complementaria para crear una experiencia interactiva y funcional en el lado cliente. 
 
 HTML proporciona la estructura y el contenido básico de una página web a través de etiquetas y atributos que organizan elementos como encabezados, párrafos, imágenes, etc. HTML por sí solo es estático y no puede responder dinámicamente a las interacciones del usuario.
 
-Aquí es donde JavaScript entra en acción, permitiendo la interacción y manipulación del contenido de HTML de manera dinámica. JavaScript accede y modifica los elementos del DOM ( Document Object Model ), que es una representación interna de la estructura HTML en el navegador. 
-Con JavaScript puedes cambiar el contenido de una página sin recargarla, crear carruseles, galería de imágenes, manejar eventos como clicks, etc.
+Aquí es donde **JavaScript** entra en acción, permitiendo la interacción y manipulación del contenido de HTML de manera dinámica. **JavaScript** accede y modifica los elementos del DOM ( Document Object Model ), que es una representación interna de la estructura HTML en el navegador. 
+Con **JavaScript** puedes cambiar el contenido de una página sin recargarla, crear carruseles, galería de imágenes, manejar eventos como clicks, etc.
 
 ### Herramientas de programación para clientes web.
 
@@ -149,11 +149,32 @@ Existen una gran variedad de herramientas de programación para clientes web. Es
 
 Este proyecto se va a desarrollar con el entorno Visual Studio Code tanto como en el lado Cliente como en el lado Servidor. 
 Visual Studio Code es uno de los editores más populares y ampliamente utilizado por desarrolladores web. Ofrece soporte para extensiones, depuración y una gran integración con Git.
-Es realmente ligero y rápido en comparación a los demás IDEs, como IntelliJ. Consume pocos recursos y acepta múltiples lenguajes, ya que en este proyecto se va a trabajar con varios, como HTML ( lenguaje de marcas ), CSS y JavaScript. Ofrece una amplia colección de extensiones gratuitas, como linters, autocompletado para diversos lenguajes, Live Server , etc.
+Es realmente ligero y rápido en comparación a los demás IDEs, como IntelliJ. Consume pocos recursos y acepta múltiples lenguajes, ya que en este proyecto se va a trabajar con varios, como HTML ( lenguaje de marcas ), CSS y **JavaScript**. Ofrece una amplia colección de extensiones gratuitas, como linters, autocompletado para diversos lenguajes, Live Server , etc.
 
 
 
+## Compatibilidad entre navegadores
 
+Los diferentes navegadores manejan **JavaSctip**  a través de motores especializados, como V8 en Chrome y Edge, SpiderMonkey en Firefox y JavaScriptCore en Safari.
+Estas diferencias en los motores afectan al rendimiento y la compatibilidad de las aplicaciones web. Algunos navegadores ejecutan operaciones JavaScript más rápido que otros, y llas características más recientes del lenguaje pueden no estar disponible en versiones antiguas o desactualizadas.
+
+En cuanto a HTML y CSS, los navegadores modernos tienen un soporte generalizado para HTML5 y CSS3, pero pueden surgir variaciones en la representación visual y en el soporte de propiedades avanzadas como Flexbox, Grid y animaciones. Estas diferencias pueden afectar la experiencia de usuario y el diseño visual de las aplicaciones. 
+
+A continuación se expone un ejemplo visual de algunas de las compatibilidades e incompatibilidades de los principales navegadores con **JavaScript**
+
+![Compatibilidades 1](./images/compatibilidad1.png)
+
+En este ejemplo podemos observar que  *details.windowId* no es compatible con Chrome, Edge u Opera, pero sí es compatible con Firefox y Safari.
+
+
+![Compatibilidades event](./images/compatibilidades2.png)
+
+Events tambien tiene algunos métodos que no son compatibles con algunos navegadores, como por ejemplo *Events.addRules* que es incompatible con Firefox y Safari.
+Y como estos muchos ejemplos más que se pueden ver en [compatibilidad de navegadores con la API de JavaScript](https://developer.mozilla.org/es/docs/Mozilla/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs#events)
+
+
+
+## Análisis de Mercado
 
 
 ### Bibliografía
@@ -166,3 +187,4 @@ Es realmente ligero y rápido en comparación a los demás IDEs, como IntelliJ. 
 - servidor tiempo real : https://www.tooltyp.com/arquitectura-de-un-servicio-de-mensajeria-instantanea-como-whatsapp/
 - typescript : https://codigofacilito.com/articulos/typescript
 - javascript : https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+- compatibilidad navegadores : https://codelucky.com/javascript-browser-support/  https://developer.mozilla.org/es/docs/Mozilla/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs
